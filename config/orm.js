@@ -10,6 +10,15 @@ const orm = {
             }
         );
     },
+    insertOne(tableName, colName, value) {
+        const query = 'INSERT INTO ?? (??) VALUES (?)';
+        connection.query(query, [tableName, colName, value],
+            (err, result) => {
+                if (err) throw err;
+                console.log(result);
+            }
+        );
+    },
 };
   
 module.exports = orm;  
