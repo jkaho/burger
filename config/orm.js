@@ -19,6 +19,15 @@ const orm = {
             }
         );
     },
+    updateOne(tableName, colName, value) {
+        const query = 'UPDATE ?? SET ?? = ?';
+        connection.query(query, [tableName, colName, value],
+            (err, result) => {
+                if (err) throw err;
+                console.log(result);
+            }
+        );
+    }
 };
   
 module.exports = orm;  
