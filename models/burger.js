@@ -12,7 +12,7 @@ const burger = {
         });
     },
     updateOne: function(colVal, conditionVal, cb) {
-        orm.updateOne('burgers', 'devoured', colVal, 'id', conditionVal, function(result) {
+        orm.updateOne('burgers', 'devoured', parseInt(colVal), 'id', conditionVal, function(result) {
             cb(result);
         });
     }

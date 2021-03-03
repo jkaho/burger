@@ -16,7 +16,7 @@ router.post('/add', (req, res) => {
     });
 });
 
-router.put('/devour/:id', (req, res) => {
+router.post('/devour/:id', (req, res) => {
     burger.updateOne(req.body.devoured, req.params.id, () => {
         res.redirect('/');
     });
