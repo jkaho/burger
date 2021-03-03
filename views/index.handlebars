@@ -30,9 +30,11 @@
                     {{#if this.devoured}}
                         <li>
                             {{this.burger_name}}
+                            <button data-id="{{this.id}}" type="submit">Delete</button>
                         </li>
                     {{/if}}
                 {{/each}}
             </ul>
     </div>
 </div>
+

@@ -15,6 +15,11 @@ const burger = {
         orm.updateOne('burgers', 'devoured', parseInt(colVal), 'id', conditionVal, function(result) {
             cb(result);
         });
+    },
+    deleteOne: function(conditionVal, cb) {
+        orm.deleteOne('burgers', 'id', conditionVal, function(result) {
+            cb(result);
+        });
     }
 };
 
