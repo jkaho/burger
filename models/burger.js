@@ -1,5 +1,7 @@
+// Dependencies
 const orm = require('../config/orm');
 
+// Model (database interaction) 
 const burger = {
     selectAll: function(cb) {
         orm.selectAll('burgers', function(result) {
@@ -23,4 +25,5 @@ const burger = {
     }
 };
 
+// Exports
 module.exports = burger;

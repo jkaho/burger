@@ -1,8 +1,10 @@
+// Dependencies
 const express = require('express');
 const burger = require('../models/burger');
 
 const router = express.Router();
 
+// ROUTES 
 router.get('/', (req, res) => {
     burger.selectAll((data) => {
         const hbsObject = { burgers: data };
@@ -16,7 +18,7 @@ router.post('/add', (req, res) => {
     });
 });
 
-// PUT request (using POST request as PUT doesn't work in HTML forms)
+// Note: Using POST as a PUT request because PUTs don't work in HTML
 router.post('/devour/:id', (req, res) => {
     burger.updateOne(req.body.devoured, req.params.id, () => {
         res.redirect('/');

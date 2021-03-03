@@ -1,5 +1,7 @@
+// Dependencies
 const connection = require('./connection.js');
 
+// ORM 
 const orm = {
     selectAll(tableName, cb) {
         const query = 'SELECT * FROM ??';
@@ -38,5 +40,6 @@ const orm = {
         );
     }
 };
-  
+
+// Exports
 module.exports = orm;  
