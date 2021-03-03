@@ -19,9 +19,9 @@ const orm = {
             }
         );
     },
-    updateOne(tableName, colName, value, cb) {
-        const query = 'UPDATE ?? SET ?? = ?';
-        connection.query(query, [tableName, colName, value],
+    updateOne(tableName, colName, colVal, conditionCol, conditionVal, cb) {
+        const query = 'UPDATE ?? SET ?? = ? WHERE ?? = ?';
+        connection.query(query, [tableName, colName, colVal, conditionCol, conditionVal],
             (err, result) => {
                 if (err) throw err;
                 cb(result);
