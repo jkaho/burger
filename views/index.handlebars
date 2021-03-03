@@ -30,7 +30,7 @@
                     {{#if this.devoured}}
                         <li>
                             {{this.burger_name}}
-                            <button data-id="{{this.id}}" type="submit">Delete</button>
+                            <button class="delete-btn" data-id="{{this.id}}" type="submit">Delete</button>
                         </li>
                     {{/if}}
                 {{/each}}
@@ -38,3 +38,17 @@
     </div>
 </div>
 
+<script type="text/javascript">
+    const deleteBtns = document.querySelectorAll(".delete-btn");
+    deleteBtns.forEach((button) => {
+        button.addEventListener("click", (event) => {
+            const id = event.target.getAttribute("data-id");
+
+            fetch(`/devour/${id}`, {
+                method: 'DELETE',
+            }).then((res) => {
+                location.reload();
+            });
+        });
+    });
+</script>
