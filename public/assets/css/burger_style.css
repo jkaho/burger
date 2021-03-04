@@ -62,7 +62,7 @@ main {
     outline: none;
 }
 
-.input-div button {
+#add-btn {
     border: none;
     background-color: rgb(48, 181, 48);
     color: white;
@@ -73,6 +73,27 @@ main {
     cursor: pointer;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
+}
+
+.fa-info-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+}
+
+.info-div {
+    display: none;
+    padding: 10px;
+    background-color: rgb(29, 83, 158, .8);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.info-div ol {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
 }
 
 .burger-lists {
@@ -103,7 +124,7 @@ main {
     background-color: white;
     width: 300px;
     vertical-align: top;
-    padding: 5px;
+    padding: 5px 5px 5px 10px;
     margin: 0;
     margin-bottom: 5px;
     border-radius: 5px;
