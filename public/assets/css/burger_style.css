@@ -1,4 +1,5 @@
 body {
+    margin: 0;
     background-color: rgb(126, 221, 255);
 }
 
@@ -14,7 +15,7 @@ body {
     width: 600px;
 }
 
-.bg {
+main {
     position: relative;
     background-image: url('../images/burger-bg.png');
     background-size: cover;
@@ -25,7 +26,7 @@ body {
     z-index: 1;
 }
 
-main {
+.main {
     position: relative;
     width: 800px;
     margin: 0 auto;
@@ -147,4 +148,29 @@ main {
 
 .to-eat form {
     display: inline-block;
+}
+
+footer {
+    position: absolute;
+    background-color: #FF5100;
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    padding-top: 30px;
+}
+
+footer span {
+    font-family: 'Poppins', sans-serif;   
+    font-size: 18px;
+    color: white; 
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #8a2c00;
 }

@@ -2,20 +2,19 @@
     <img id="heading-img" src="assets/images/heading.png">
 </div>
 
-<div class="bg">
-
 <main>
-    <div class="input-div">
-        <h2>What kind of burger would you like?</h2>
-        <form action="/add" method="POST">
-            <input type="text" name="burger_name" maxlength="50" placeholder="Enter burger name">
-            <button type="submit"><i class="fas fa-plus"></i></button>
-        </form>
-    </div>
+    <div class="main">
+        <div class="input-div">
+            <h2>What kind of burger would you like?</h2>
+            <form action="/add" method="POST">
+                <input type="text" name="burger_name" maxlength="50" placeholder="Enter burger name">
+                <button type="submit"><i class="fas fa-plus"></i></button>
+            </form>
+        </div>
 
-    <div class="burger-lists">
-        <div class="to-eat">
-            <h2>To eat...</h2>
+        <div class="burger-lists">
+            <div class="to-eat">
+                <h2>To eat...</h2>
                 <ul>
                 {{#each burgers}}
                     {{#unless this.devoured}}
@@ -28,9 +27,9 @@
                     {{/unless}}
                 {{/each}}
                 </ul>
-        </div>
-        <div class="eaten">
-            <h2>Eaten...</h2>
+            </div>
+            <div class="eaten">
+                <h2>Eaten...</h2>
                 <ul>
                     {{#each burgers}}
                         {{#if this.devoured}}
@@ -41,10 +40,14 @@
                         {{/if}}
                     {{/each}}
                 </ul>
+            </div>
         </div>
     </div>
 </main>
-</div>
+
+<footer>
+    <span><a href="https://www.github.com/jkaho/burger" target="_blank">Project GitHub Repo</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://jkaho.github.io/my-personal-website" target="_blank">My Portfolio</a></span>
+</footer>
 
 <!-- Delete request -->
 <script type="text/javascript">
@@ -52,7 +55,7 @@
     deleteBtns.forEach((button) => {
         button.addEventListener("click", (event) => {
             const id = event.target.getAttribute("data-id");
-            
+
             fetch(`/devour/${id}`, {
                 method: 'DELETE',
             }).then((res) => {
