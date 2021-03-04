@@ -46,10 +46,17 @@ main {
 }
 
 .input-div input {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
     border: none;
-    font-size: 25px;
+    font-size: 20px;
     height: 30px;
+    width: 300px;
     vertical-align: top;
+}
+
+.input-div input:focus {
+    outline: none;
 }
 
 .input-div button {
@@ -75,6 +82,8 @@ main {
 }
 
 .burger-lists ul {
+    font-family: 'Poppins', sans-serif;    
+    font-weight: 200;
     list-style-type: none;
     padding: 0;
 }
