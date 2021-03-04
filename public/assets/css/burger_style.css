@@ -2,6 +2,18 @@ body {
     background-color: rgb(126, 221, 255);
 }
 
+.heading {
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+}
+
+#heading-img {
+    margin: 25px 0;
+    height: 100px;
+    width: 600px;
+}
+
 .bg {
     position: relative;
     background-image: url('../images/burger-bg.png');
@@ -20,14 +32,31 @@ main {
     z-index: 2;
 }
 
-.heading {
+.input-div {
+    padding-top: 60px;
     text-align: center;
-    width: 100%;
-    height: fit-content;
 }
 
-#heading-img {
-    margin: 25px 0;
-    height: 100px;
-    width: 600px;
+.input-div h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    margin: 0 0 10px 0;
+}
+
+.input-div input {
+    border: none;
+    font-size: 25px;
+    height: 30px;
+    vertical-align: top;
+}
+
+.input-div button {
+    border: none;
+    background-color: rgb(48, 181, 48);
+    color: white;
+    height: 32px;
+    width: 30px;
+    vertical-align: top;
+    margin-left: -20px;
+    cursor: pointer;
 }
