@@ -5,7 +5,7 @@
 <main>
     <div class="main">
         <div class="input-div">
-            <i class="fas fa-info-circle fa-2x"></i>
+            <i id="info-icon" class="fas fa-info-circle fa-2x"></i>
             <h2>What kind of burger would you like?</h2>
             <form action="/add" method="POST">
                 <input type="text" name="burger_name" maxlength="50" placeholder="Enter burger name">
@@ -19,10 +19,10 @@
                     <p>Enter the name of a burger you would like to eat to add it to your 'To eat' list.</p>
                 </li>
                 <li>
-                    <p>When your burger appears in the 'To eat' list, press the blue button to devour it and move it to the 'Eaten' list.</p>
+                    <p>When your burger appears in the 'To eat' list, press the blue button to move it to the 'Eaten' list.</p>
                 </li>
                 <li>
-                    <p>When your burger appears in the 'Eaten' list, press the red button to get rid of it!</p>
+                    <p>When your burger appears in the 'Eaten' list, press the red button to get rid of it for good!</p>
                 </li>
             </ol>
         </div>
@@ -64,8 +64,25 @@
     <span><a href="https://www.github.com/jkaho/burger" target="_blank">Project GitHub Repo</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://jkaho.github.io/my-personal-website" target="_blank">My Portfolio</a></span>
 </footer>
 
-<!-- Delete request -->
 <script type="text/javascript">
+    // Show instructions
+    const infoIcon = document.getElementById("info-icon");
+    const infoDiv = document.querySelector(".info-div");
+    const toEatDiv = document.querySelector(".to-eat");
+    const eatenDiv = document.querySelector(".eaten");
+
+    infoIcon.addEventListener("mouseover", (event) => {
+        infoDiv.setAttribute("style", "display: inline-block");
+        toEatDiv.setAttribute("style", "height: 218px");
+        eatenDiv.setAttribute("style", "height: 218px");
+    });
+    infoIcon.addEventListener("mouseout", (event) => {
+        infoDiv.setAttribute("style", "display: none");
+        toEatDiv.setAttribute("style", "height: 400px");
+        eatenDiv.setAttribute("style", "height: 400px");
+    });
+
+    // Delete request
     const deleteBtns = document.querySelectorAll(".delete-btn");
     deleteBtns.forEach((button) => {
         button.addEventListener("click", (event) => {

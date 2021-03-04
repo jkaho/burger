@@ -80,6 +80,7 @@ main {
     top: 0;
     left: 0;
     margin: 10px;
+    cursor: help;
 }
 
 .info-div {
@@ -88,6 +89,7 @@ main {
     background-color: rgb(29, 83, 158, .8);
     border-radius: 5px;
     margin-top: 10px;
+    width: 780px;
 }
 
 .info-div ol {
