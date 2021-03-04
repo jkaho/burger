@@ -1,5 +1,11 @@
 body {
-    background: rgb(126, 221, 255);
+    background-color: rgb(126, 221, 255);
+}
+
+main {
+    background-image: url('../images/burger-bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .heading {
@@ -12,4 +18,10 @@ body {
     margin: 25px 0;
     height: 100px;
     width: 600px;
+}
+
+#bg-img {
+    position: absolute;
+    height: 600px;
+    width: 800px;
 }
