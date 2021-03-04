@@ -36,7 +36,7 @@
                         {{#if this.devoured}}
                             <li>
                                 <p>{{this.burger_name}}</p>
-                                <button class="delete-btn" data-id="{{this.id}}" type="submit"><i class="fas fa-poop fa-2x"></i></button>
+                                <button class="delete-btn" data-id="{{this.id}}" type="submit"><i data-id="{{this.id}}" class="fas fa-poop fa-2x"></i></button>
                             </li>
                         {{/if}}
                     {{/each}}
@@ -52,7 +52,7 @@
     deleteBtns.forEach((button) => {
         button.addEventListener("click", (event) => {
             const id = event.target.getAttribute("data-id");
-
+            
             fetch(`/devour/${id}`, {
                 method: 'DELETE',
             }).then((res) => {
