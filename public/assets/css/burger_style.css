@@ -33,11 +33,13 @@ main {
 }
 
 .input-div {
-    padding-top: 60px;
+    padding-top: 20px;
     text-align: center;
+    background: rgba(255, 255, 255, 0.4);
+    height: 100px;
 }
 
-.input-div h3 {
+.input-div h2 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 25px;
     margin: 0 0 10px 0;
@@ -59,4 +61,71 @@ main {
     vertical-align: top;
     margin-left: -20px;
     cursor: pointer;
+}
+
+.burger-lists {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.burger-lists h2 {
+    margin-top: 0;
+    color: rgb(15, 70, 147);
+    text-shadow: 3px -2px rgb(249, 249, 249);
+}
+
+.burger-lists ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.burger-lists li {
+    line-height: 2em;
+}
+
+.burger-lists p {
+    display: inline-block;
+    background-color: white;
+    width: 300px;
+    vertical-align: top;
+    padding: 5px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.burger-lists button {
+    border: none;
+    color: white;
+    height: 42px;
+    width: 42px;;
+    vertical-align: top;
+    margin-left: -20px;
+    cursor: pointer;
+}
+
+.to-eat button {
+    background-color:rgb(29, 83, 158);
+}
+
+.eaten button {
+    background-color: rgb(220, 60, 60);
+}
+
+.to-eat, .eaten {
+    display: inline-block;
+    vertical-align: top;
+    background: rgba(255, 255, 255, 0.4);
+    font-family: 'Courier New', Courier, monospace;
+    width: 350px;
+    height: 400px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.to-eat {
+    margin-right: 10px;
+}
+
+.to-eat form {
+    display: inline-block;
 }

@@ -6,7 +6,7 @@
 
 <main>
     <div class="input-div">
-        <h3>What kind of burger would you like?</h3>
+        <h2>What kind of burger would you like?</h2>
         <form action="/add" method="POST">
             <input type="text" name="burger_name" maxlength="50" placeholder="Enter burger name">
             <button type="submit"><i class="fas fa-plus"></i></button>
@@ -20,9 +20,9 @@
                 {{#each burgers}}
                     {{#unless this.devoured}}
                         <li>
-                            {{this.burger_name}}
+                            <p>{{this.burger_name}}</p>
                             <form action="/devour/{{this.id}}" method="POST">
-                                <button type="submit" name="devoured" value="1">Devour</button>
+                                <button type="submit" name="devoured" value="1"><i class="fas fa-utensils fa-2x"></i></button>
                             </form>
                         </li>
                     {{/unless}}
@@ -35,8 +35,8 @@
                     {{#each burgers}}
                         {{#if this.devoured}}
                             <li>
-                                {{this.burger_name}}
-                                <button class="delete-btn" data-id="{{this.id}}" type="submit">Delete</button>
+                                <p>{{this.burger_name}}</p>
+                                <button class="delete-btn" data-id="{{this.id}}" type="submit"><i class="fas fa-poop fa-2x"></i></button>
                             </li>
                         {{/if}}
                     {{/each}}
