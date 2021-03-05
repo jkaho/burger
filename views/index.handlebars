@@ -2,15 +2,23 @@
     <img id="heading-img" src="assets/images/heading.png">
 </div>
 
+<div class="top-burger">
+    <img src="assets/images/burger-bg.png" width="500px" height="330px">
+</div>
+
+<div class="bottom-burger">
+    <img src="assets/images/burger-bg.png" width="500px" height="330px">
+</div>
+
 <main>
     <div class="main">
         <div class="input-div">
-            <i id="info-icon" class="fas fa-info-circle fa-2x"></i>
             <h2>What kind of burger would you like?</h2>
             <form action="/add" method="POST">
                 <input type="text" name="burger_name" maxlength="35" placeholder="Enter burger name">
                 <button id="add-btn" type="submit"><i class="fas fa-plus"></i></button>
             </form>
+            <i id="info-icon" class="fas fa-info-circle fa-2x"></i>
         </div>
 
         <div class="info-div">
@@ -72,7 +80,7 @@
     const eatenDiv = document.querySelector(".eaten");
 
     infoIcon.addEventListener("mouseover", (event) => {
-        infoDiv.setAttribute("style", "display: inline-block");
+        infoDiv.setAttribute("style", "display: block");
         toEatDiv.setAttribute("style", "height: 241px");
         eatenDiv.setAttribute("style", "height: 241px");
     });

@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding: 0;
     background-color: rgb(126, 221, 255);
 }
 
@@ -13,6 +14,25 @@ body {
     margin: 25px 0;
     height: 100px;
     width: 600px;
+}
+
+.top-burger, .bottom-burger {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+.top-burger img, .bottom-burger img {
+    display: block;
+    margin: 0 auto;
+}
+
+.top-burger {
+    margin-top: 250px;
+}
+
+.bottom-burger {
+    margin-top: 700px;
 }
 
 main {
@@ -174,7 +194,7 @@ main {
 }
 
 footer {
-    position: absolute;
+    position: relative;
     background-color: #FF5100;
     height: 50px;
     width: 100%;
@@ -198,4 +218,53 @@ footer a:hover {
     color: #8a2c00;
 }
 
-/* @media (max-width: ) */
+@media (max-width: 900px) {
+    .top-burger, .bottom-burger {
+        display: block;
+    }
+
+    main {
+        background-image: none;
+        width: 100%;
+        height: fit-content;
+        margin: 20px 0 50px 0;
+    }
+
+    .main {
+        width: fit-content;
+    }
+
+    .input-div {
+        height: 120px;
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .input-div h2 {
+        font-size: 20px;
+    }
+    
+    .input-div input {
+        font-size: 16px;
+        height: 30px;
+        width: 300px;
+    }
+
+    .fa-info-circle {
+        position: relative;
+    }
+
+    .info-div {
+        margin: 0 auto;
+        width: 500px;
+        margin-top: 10px;
+    }
+    
+    .info-div ol {
+        font-size: 13px;
+    }
+
+    .to-eat, .eaten {
+        display: block;
+    }
+}
