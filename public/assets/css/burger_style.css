@@ -53,7 +53,7 @@ main {
     border: none;
     font-size: 20px;
     height: 30px;
-    width: 300px;
+    width: 350px;
     vertical-align: top;
     border-radius: 5px;
 }
@@ -197,3 +197,5 @@ footer a {
 footer a:hover {
     color: #8a2c00;
 }
+
+/* @media (max-width: ) */
