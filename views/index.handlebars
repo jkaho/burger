@@ -2,11 +2,7 @@
     <img id="heading-img" src="assets/images/heading.png">
 </div>
 
-<div class="top-burger">
-    <img src="assets/images/burger-bg.png" width="600px" height="400px">
-</div>
-
-<div class="bottom-burger">
+<div class="eaten-burger">
     <img src="assets/images/burger-eaten-bg.png" width="600px" height="400px">
 </div>
 
@@ -91,19 +87,9 @@
             toEatDiv.setAttribute("style", "height: 400px");
             eatenDiv.setAttribute("style", "height: 400px");
             isOpen = false;
-        }
-    })
-    /* infoIcon.addEventListener("mouseover", (event) => {
-        infoDiv.setAttribute("style", "display: block");
-        toEatDiv.setAttribute("style", "height: 241px");
-        eatenDiv.setAttribute("style", "height: 241px");
+        };
     });
-    infoIcon.addEventListener("mouseout", (event) => {
-        infoDiv.setAttribute("style", "display: none");
-        toEatDiv.setAttribute("style", "height: 400px");
-        eatenDiv.setAttribute("style", "height: 400px");
-    }); 
-    */
+
     // Delete request
     const deleteBtns = document.querySelectorAll(".delete-btn");
     deleteBtns.forEach((button) => {
