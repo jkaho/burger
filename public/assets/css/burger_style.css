@@ -28,11 +28,11 @@ body {
 }
 
 .top-burger {
-    margin-top: 250px;
+    margin-top: 215px;
 }
 
 .bottom-burger {
-    margin-top: 700px;
+    margin-top: 680px;
 }
 
 main {
@@ -218,7 +218,7 @@ footer a:hover {
     color: #8a2c00;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 900px) and (min-width: 450px) {
     .top-burger, .bottom-burger {
         display: block;
     }
@@ -266,5 +266,97 @@ footer a:hover {
 
     .to-eat, .eaten {
         display: block;
+    }
+}
+
+@media (max-width: 450px) {
+    #heading-img {
+        height: 10%;
+        width: 95%;
+        margin-bottom: 0;
+    }
+
+    .top-burger, .bottom-burger {
+        display: block;
+    }
+
+    .top-burger img, .bottom-burger img {
+        width: 95%;
+        height: 220px;
+    }
+
+    .bottom-burger {
+        bottom: 0;
+        margin: 0;
+        margin-bottom: -100px;
+    }
+
+    main {
+        background-image: none;
+        width: 100%;
+        height: fit-content;
+        margin: 20px 0 50px 0;
+    }
+
+    .main {
+        width: fit-content;
+    }
+
+    .input-div {
+        height: 130px;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .input-div h2 {
+        font-size: 15px;
+    }
+    
+    .input-div input {
+        font-size: 13px;
+        height: 30px;
+        width: 250px;
+    }
+
+    .fa-info-circle {
+        position: relative;
+    }
+
+    .info-div {
+        margin: 0 auto;
+        width: 95%;
+        margin-top: 10px;
+    }
+    
+    .info-div ol {
+        font-size: 13px;
+    }
+
+    .burger-lists {
+        width: 100%;
+    }
+
+    .to-eat, .eaten {
+        display: block;
+        width: 90%;
+        padding: 10px;
+        height: fit-content;
+        max-height: 400px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .burger-lists h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .burger-lists p {
+        font-size: 12px;
+        width: 83%;
+    }
+
+    footer span {
+        font-size: 15px;
     }
 }
