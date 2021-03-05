@@ -100,7 +100,7 @@ main {
     top: 0;
     left: 0;
     margin: 10px;
-    cursor: help;
+    cursor: pointer;
 }
 
 .info-div {

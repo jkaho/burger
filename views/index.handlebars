@@ -78,8 +78,22 @@
     const infoDiv = document.querySelector(".info-div");
     const toEatDiv = document.querySelector(".to-eat");
     const eatenDiv = document.querySelector(".eaten");
+    let isOpen = false;
 
-    infoIcon.addEventListener("mouseover", (event) => {
+    infoIcon.addEventListener("click", () => {
+        if (!isOpen) {
+            infoDiv.setAttribute("style", "display: block");
+            toEatDiv.setAttribute("style", "height: 241px");
+            eatenDiv.setAttribute("style", "height: 241px");
+            isOpen = true;
+        } else {
+            infoDiv.setAttribute("style", "display: none");
+            toEatDiv.setAttribute("style", "height: 400px");
+            eatenDiv.setAttribute("style", "height: 400px");
+            isOpen = false;
+        }
+    })
+    /* infoIcon.addEventListener("mouseover", (event) => {
         infoDiv.setAttribute("style", "display: block");
         toEatDiv.setAttribute("style", "height: 241px");
         eatenDiv.setAttribute("style", "height: 241px");
@@ -88,8 +102,8 @@
         infoDiv.setAttribute("style", "display: none");
         toEatDiv.setAttribute("style", "height: 400px");
         eatenDiv.setAttribute("style", "height: 400px");
-    });
-
+    }); 
+    */
     // Delete request
     const deleteBtns = document.querySelectorAll(".delete-btn");
     deleteBtns.forEach((button) => {
