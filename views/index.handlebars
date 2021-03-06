@@ -24,21 +24,21 @@
         <div class="info-div">
             <ol>
                 <li>
-                    <p>Enter the name of a burger you would like to eat to add it to your 'To eat' list.</p>
+                    <p>Enter the name of a burger you would like to devour to add it to your 'To devour' list.</p>
                 </li>
                 <li>
-                    <p>When your burger appears in the 'To eat' list, press the blue button to move it to the 'Eaten' list.</p>
+                    <p>When your burger appears in the 'To devour' list, press the blue button to move it to the 'Devoured' list.</p>
                 </li>
                 <li>
-                    <p>When your burger appears in the 'Eaten' list, press the red button to get rid of it for good!</p>
+                    <p>When your burger appears in the 'Devoured' list, press the red button to get rid of it for good!</p>
                 </li>
             </ol>
         </div>
 
         <div class="burger-lists">
-            <!-- 'To eat' list -->
+            <!-- 'To devour' list -->
             <div class="to-eat">
-                <h2>To eat</h2>
+                <h2>To devour</h2>
                 <ul>
                 {{#each burgers}}
                     {{#unless this.devoured}}
@@ -52,9 +52,9 @@
                 {{/each}}
                 </ul>
             </div>
-            <!-- 'Eaten' list -->
+            <!-- 'Devoured' list -->
             <div class="eaten">
-                <h2>Eaten</h2>
+                <h2>Devoured</h2>
                 <ul>
                     {{#each burgers}}
                         {{#if this.devoured}}
