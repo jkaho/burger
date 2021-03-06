@@ -200,7 +200,7 @@ main {
 /* FOOTER */
 
 footer {
-    position: relative;
+    position: absolute;
     background-color: #FF5100;
     height: 50px;
     width: 100%;
