@@ -42,3 +42,5 @@ This project was undertaken with the goal to create an application using the Mod
 ![Eat-Da-Burger application on mobile screen](public/assets/images/readme/readme-sm.png)
 
 ## Link
+
+[Link to deployed application](https://powerful-taiga-80977.herokuapp.com/)
