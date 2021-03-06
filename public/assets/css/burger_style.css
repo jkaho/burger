@@ -1,11 +1,16 @@
 /* ------------ GENERAL STYLES ------------ */
 /* BODY */
 
+html, body {
+    min-height: 100vh;
+    height: fit-content;
+}
+
 body {
+    position: relative;
     margin: 0;
     padding: 0;
     background-color: rgb(126, 221, 255);
-    height: 100%;
     width: 100%;
 }
 
@@ -242,6 +247,7 @@ footer a:hover {
 
     .main {
         width: fit-content;
+        padding-bottom: 100px;
     }
 
     .input-div {
@@ -310,6 +316,7 @@ footer a:hover {
 
     .main {
         width: fit-content;
+        padding-bottom: 100px;
     }
 
     .input-div {
