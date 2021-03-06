@@ -43,4 +43,4 @@ This project was undertaken with the goal to create an application using the Mod
 
 ## Link
 
-[Link to deployed application](https://powerful-taiga-80977.herokuapp.com/)
+[Link to deployed application](https://jkaho-burger.herokuapp.com/)
