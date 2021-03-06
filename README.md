@@ -25,4 +25,16 @@
 
 ## Screenshots
 
+### Large viewport 
+
+![Eat-Da-Burger application on desktop/laptop screen](assets/images/readme/readme-lg.png)
+
+### Medium viewport
+
+![Eat-Da-Burger application on tablet screen](assets/images/readme/readme-md.png)
+
+### Small viewport
+
+![Eat-Da-Burger application on mobile screen](assets/images/readme/readme-sm.png)
+
 ## Link
