@@ -1,3 +1,6 @@
+/* ------------ GENERAL STYLES ------------ */
+/* BODY */
+
 body {
     margin: 0;
     padding: 0;
@@ -6,10 +9,7 @@ body {
     width: 100%;
 }
 
-/* .page-container {
-    position: relative;
-    min-height: 100vh;
-} */
+/* EAT-DA-BURGER HEADING */
 
 .heading {
     text-align: center;
@@ -23,6 +23,8 @@ body {
     width: 600px;
 }
 
+/* BURGER BACKGROUND IMAGE */
+
 .eaten-burger {
     display: none;
     position: absolute;
@@ -34,6 +36,8 @@ body {
     display: block;
     margin: 0 auto;
 }
+
+/* MAIN */
 
 main {
     position: relative;
@@ -52,6 +56,7 @@ main {
     z-index: 2;
 }
 
+/* Burger name input */
 .input-div {
     padding-top: 20px;
     text-align: center;
@@ -94,6 +99,7 @@ main {
     border-top-right-radius: 5px;
 }
 
+/* Instructions */
 .fa-info-circle {
     position: absolute;
     top: 0;
@@ -117,6 +123,7 @@ main {
     font-size: 15px;
 }
 
+/* 'To Eat' & 'Eaten' lists section */
 .burger-lists {
     width: fit-content;
     margin: 0 auto;
@@ -125,8 +132,6 @@ main {
 .burger-lists h2 {
     margin-top: 0;
     color: black;
-    /* color: rgb(15, 70, 147); */
-    /* text-shadow: 3px -2px rgb(249, 249, 249); */
 }
 
 .burger-lists ul {
@@ -192,6 +197,8 @@ main {
     display: inline-block;
 }
 
+/* FOOTER */
+
 footer {
     position: relative;
     background-color: #FF5100;
@@ -218,6 +225,9 @@ footer a:hover {
     color: #8a2c00;
 }
 
+/* ------------ MEDIA QUERIES ------------ */
+
+/* Medium viewport */
 @media (max-width: 900px) and (min-width: 450px) {
     .eaten-burger {
         display: block;
@@ -275,6 +285,7 @@ footer a:hover {
     }
 }
 
+/* Small viewport */
 @media (max-width: 450px) {
     #heading-img {
         height: 10%;
