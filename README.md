@@ -1,8 +1,8 @@
-# Eat-Da-Burger
+# Eat-Da-Burger!
 
 ## Description 
 
-*Eat-Da-Burger* is a simple application for inputting and storing burger names.
+*Eat-Da-Burger!* is a simple application for inputting and storing burger names.
 
 ## Motivations
 
@@ -10,9 +10,9 @@ This project was undertaken with the goal to create an application using the Mod
 
 ## Instructions
 
-1. Enter a burger name in the input bar and it will appear on the 'To eat' list.
-2. Users can choose to devour a burger on the 'To eat' list by clicking the blue button next to the burger name, which will then move it to the 'Eaten' list.
-3. Burger names can be deleted from the 'Eaten' list by clicking on the red button next to the burger name. 
+1. Enter a burger name in the input bar and it will appear in the 'To devour' list.
+2. Devour a burger in the 'To devour' list by clicking the blue button next to the burger name, which will then move it to the 'Devoured' list.
+3. Burger names can be deleted from the 'Devoured' list by clicking on the red button next to the burger name. 
 
 ## Technologies Used 
 
