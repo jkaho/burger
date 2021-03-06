@@ -4,6 +4,10 @@
 
 *Eat-Da-Burger* is a simple application for inputting and storing burger names.
 
+## Motivations
+
+This project was undertaken with the goal to create an application using the Model-View-Controller (MVC) design pattern to separate application logic into methodical parts. 
+
 ## Instructions
 
 1. Enter a burger name in the input bar and it will appear on the 'To eat' list.
