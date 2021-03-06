@@ -264,6 +264,10 @@ footer a:hover {
         font-size: 13px;
     }
 
+    .burger-lists h2 {
+        text-align: center;
+    }
+
     .to-eat, .eaten {
         display: block;
         height: fit-content;
@@ -319,12 +323,13 @@ footer a:hover {
 
     .info-div {
         margin: 0 auto;
-        width: 95%;
+        width: 90%;
         margin-top: 10px;
     }
     
     .info-div ol {
         font-size: 13px;
+        padding-left: 25px;
     }
 
     .burger-lists {
