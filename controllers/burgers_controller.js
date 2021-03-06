@@ -18,7 +18,7 @@ router.post('/add', (req, res) => {
     });
 });
 
-// Note: Using POST as a PUT request because PUTs don't work in HTML
+// *Note: Using POST as a PUT request because PUTs don't work with HTML forms
 router.post('/devour/:id', (req, res) => {
     burger.updateOne(req.body.devoured, req.params.id, () => {
         res.redirect('/');
