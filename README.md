@@ -2,11 +2,11 @@
 
 ## Description 
 
-*Eat-Da-Burger!* is a simple application for inputting and storing burger names.
+*Eat-Da-Burger!* is a simple responsive application for inputting and storing burger names.
 
 ## Motivations
 
-This project was undertaken with the goal to create an application using the Model-View-Controller (MVC) design pattern to separate application logic into methodical parts. 
+This project was undertaken with the goal to create a full-stack application using the Model-View-Controller (MVC) design pattern to practise separating application logic into methodical parts. 
 
 ## Instructions
 
@@ -21,10 +21,10 @@ This project was undertaken with the goal to create an application using the Mod
 - Node.js
 - Express
 - SQL 
-- MySQL Community Server
 - MySQL Workbench
-- HTML
+- MySQL Community Server
 - CSS 
+- HTML
 - Heroku
 
 ## Screenshots
