@@ -26,6 +26,8 @@ This project was undertaken with the goal to create a full-stack application usi
 - CSS 
 - HTML
 - Heroku
+- Font Awesome
+- Google Fonts
 
 ## Screenshots
 
